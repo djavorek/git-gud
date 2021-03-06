@@ -7,7 +7,7 @@ class Question extends React.Component {
 	render() {
 		return (
 			<div>
-	
+				<span>{this.props.msg}</span>
 			</div>
 		);
 	}

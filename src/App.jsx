@@ -1,6 +1,6 @@
 import './App.css';
 
-import Graph from './Graph/Graph.js';
+import GitFlowGph from './Graph/graphs/GitFlowGph';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <div className="Start">
         <span>git-gud</span>
       </div>
-      <Graph />
+      <GitFlowGph />
     </div>
   );
 }
