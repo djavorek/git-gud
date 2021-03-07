@@ -5,22 +5,22 @@ const MessageContext = React.createContext();
 
 class MessageProvider extends React.Component {
 
-	initMessages = [
-		'Initial commit',
-		'Sig mundus creatus est'
-	]
+  initMessages = [
+    'Initial commit',
+    'Sig mundus creatus est'
+  ]
 
-	render() {
-		return (
-			<MessageContext.Provider
-				value={{
-					initMessages: this.initMessages
-				}}
-			>
-				{this.props.children}
-			</MessageContext.Provider>
-		)
-	}
+  render() {
+    return (
+      <MessageContext.Provider
+        value={{
+          initMessages: this.initMessages
+        }}
+      >
+        {this.props.children}
+      </MessageContext.Provider>
+    );
+  }
 }
 
 export { MessageContext, MessageProvider };

@@ -2,14 +2,12 @@ import './Menu.css';
 
 import React from 'react';
 
-
-
 function Menu() {
-	return (
-		<div>
+  return (
+    <div>
 			
-		</div>
-	);
+    </div>
+  );
 }
 
 export default Menu;

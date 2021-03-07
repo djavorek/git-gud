@@ -1,7 +1,8 @@
+import React from 'react';
+
 import './App.css';
 
 import GitFlowGph from './Graph/graphs/GitFlowGph';
-
 
 function App() {
   return (
