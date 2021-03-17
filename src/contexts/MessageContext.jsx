@@ -1,20 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+import InitialCommits from './texts/InitialCommits';
 
 const MessageContext = React.createContext();
 
 class MessageProvider extends React.Component {
 
-  initMessages = [
-    'Initial commit',
-    'Sig mundus creatus est'
-  ]
+
 
   render() {
     return (
       <MessageContext.Provider
         value={{
-          initMessages: this.initMessages
+          initialCommits: InitialCommits.getSerious
         }}
       >
         {this.props.children}
@@ -22,5 +21,10 @@ class MessageProvider extends React.Component {
     );
   }
 }
+
+
+MessageProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export { MessageContext, MessageProvider };

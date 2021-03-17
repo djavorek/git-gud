@@ -1,10 +1,10 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Gitgraph as GitGraph } from '@gitgraph/react';
+
 import './Graph.css';
 
-import { Gitgraph as GitGraph } from '@gitgraph/react';
-import React from 'react';
-
 class Graph extends React.Component {
-
   constructor(props) {
     super(props);
     this.options = {
@@ -21,5 +21,9 @@ class Graph extends React.Component {
     );
   }
 }
+
+Graph.propTypes = {
+  graph: PropTypes.object.isRequired,
+};
 
 export default Graph;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 
-import GitFlowGph from './Graph/graphs/GitFlowGph';
+import GitFlowGph from './components/Graph/graphs/GitFlowGph';
 
 function App() {
   return (
